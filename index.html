@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="victoria, cv, resume">
     <meta name="description" content="Это сайт резюме Виктории">
-    
+    <link rel="stylesheet" href="styles.css">
     <title>Victoria Resume</title>
 </head>
 <body>
 
-    <img src="avatar.jpg" alt="Виктория Юрьевна" width="200">
+<div class="container">
+
+<div class="info">
+
+     <img src="avatar.jpg" alt="Виктория Юрьевна" class="avatar">
+
+     <div class="info-text">
     <h1>Виктория Юрьевна</h1>
+
+
+
 
 <p>Я универсальный специалист <strong>миолог, мастер Рейки</strong></p>
 <p>Я люблю путешествовать, мечтаю о кругосветном путешествии под парусом</p>
@@ -24,25 +33,33 @@
 <a href=https://vk.ru/away.php?to=https%3A%2F%2Ft.me%2Fgarmoniyaya&utf=1"" target="_blank">Telegram</a>
 |
 <a href="https://vk.ru/id1266870" target="_blank">Vkontakte</a>
+</div>
+</div>
 
+
+<div class="card bg-green">
 <h2>Мои хобби</h2>
-    <ol>
+
+    <ol class="list">
         <li> Путешествия
         </li>
         <li>Ходить под парусом</li>
         <li>Гулять</li>
         <li>Кататься на чём угодно, фиг знает где</li>
     </ol>
+</div>
 
+<div class="card bg-red">
     <h2>Опыт работы</h2>
-    <table>
-        <thead>
+
+    <table class="table">
+        <!-- <thead>
             <tr>
             <th>Название</th>
             <th>Должность</th>
             <th>Год</th>
             </tr>
-        </thead>
+        </thead> -->
         <tbody>
             <tr>
                 <td>Нутриция</td>
@@ -57,38 +74,64 @@
             </tr>
 
  <tr>
-                <td>Обуховский завод</td>
-                <td>ведущий инженер</td>
-                <td>2025-2026</td>
+                <td>Слушаю себя</td>
+                <td>Помогаю другим</td>
+                <td>всегда-сейчас</td>
             </tr>
 
         </tbody>
     </table>
-<h2> Связаться со мной</h2>
 
-<form action="/">
-    <div>
+</div>
+
+<div>
+    <h2>Мои курсы</h2>
+
+<ul class="link-list">
+    <li><a href="#">Школа Миологии</a></li>
+    <li><a href="#"> Фронтенд разработчик</a></li>
+    <li>Капитан парусной яхты</li>
+    <li>Практики Рейки</li>
+</ul>
+
+
+</div>
+
+
+ 
+
+<form action="/" class="form">  
+     <h2> Связаться со мной</h2>      
+     <!-- class=bg-red -->
+
+     <div class="form-row">
+    <div class="form-group">
         <label for="name">Ваше имя</label>
         <input type="text" id="name" placeholder="Введите имя">
     </div>
 
-<div>
+<div class="form-group" >
         <label for="email">Email</label>
         <input type="email" id="email" placeholder="Введите email">
     </div>
+    </div>
 
-    <div>
+    <div class="form-group">
         <label for="message"> Ваше сообщение</label>
-        <br>
+        
         <textarea id="message"  cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
     </div>
 
-<input type="submit" value="Отправить">
+<input class="btn" type="submit" value="Отправить">
 
 </form>
 <br>
 <br>
 <br>
+
+
+</div>
+</div>
 
 </body>
 </html>
